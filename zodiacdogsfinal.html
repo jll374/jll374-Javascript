@@ -1,0 +1,137 @@
+ <!DOCTYPE html> 
+ <html> 
+ <head lang="en"> 
+     <meta charset="UTF-8"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <title>Zodiac Dogs</title> 
+     <link rel="stylesheet" type="text/css" href="DogZodiac3.css">
+     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+     <script src="DogProjectChange3.js"></script>
+
+ </head> 
+
+<body> 
+
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Need Help?</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal" style="display:none" >
+
+  <!-- Modal content -->
+  <div class="modal-content" >
+    
+    <p>Enter your birth date in the form and hit "Click!". Your zodiac sign will appear on the screen along with a list of dog breeds that are a good match for you. Click the red "close x" button to exit the zodiac sign description, or hit the reset button. </p>
+    <span class="close">&times;</span>
+  </div>
+
+</div>
+
+
+<!--Logo-->
+ <div class="container">
+        
+          <div class="item-a"> 
+            <picture>
+            <source srcset="images/doglog_xsmall.png" media="(max-width: 500px)">
+            <source srcset="images/doglog_medium.png" media="(min-width:501px) and (max-width:900px)">
+            <img src="images/doglog_medium.png" alt="">
+         </picture>
+         </div>
+<!--Into-->     
+    <div class="item-b">
+      <h1 class="centerText">Find your perfect breed!</h1> 
+    </div>
+    <div class="container"> 
+           <h2>Find out what dog breed is best for your personality based on your zodiac sign.</h2> 
+           <p>Please enter your birth date</p>
+    </div>   
+<!--Birthday Form-->
+   <form id="zodiacForm" name="zodiacForm">    
+   <select id="monthInput"><!--Month Input-->
+        <option> Month</option>
+        <option value="1"> January</option>
+        <option value="2"> Febuary</option>
+        <option value="3"> March</option>
+        <option value="4"> April</option>
+        <option value="5"> May</option>
+        <option value="6"> June</option>
+        <option value="7"> July</option>
+        <option value="8"> August</option>
+        <option value="9"> September</option>
+        <option value="10"> October</option>
+        <option value="11"> November</option>
+        <option value="12"> December</option>
+      </select>
+    <select id="dateInput">
+        <option>Day</option><!--Day Input-->
+        <option value="1"  >1</option>
+        <option value="2"  >2</option>
+        <option value="3"  >3</option>
+        <option value="4"  >4</option>
+        <option value="5"  >5</option>
+        <option value="6"  >6</option>
+        <option value="7"  >7</option>
+        <option value="8"   >8</option>
+        <option value="9"   >9</option>
+        <option value="10"  >10</option>
+        <option value="11"  >11</option>
+        <option value="12"  >12</option>
+        <option value="13"  >13</option>
+        <option value="14"  >14</option>
+        <option value="15"  >15</option>
+        <option value="16"  >16</option>
+        <option value="17"  >17</option>
+        <option value="18"  >18</option>
+        <option value="19"  >19</option>
+        <option value="20"  >20</option>
+        <option value="21"  >21</option>
+        <option value="22"  >22</option>
+        <option value="23"  >23</option>
+        <option value="24"  >24</option>
+        <option value="25"  >25</option>
+        <option value="26"  >26</option>
+        <option value="27"  >27</option>
+        <option value="28"  >28</option>
+        <option value="29"  >29</option>
+        <option value="30"  >30</option>
+        <option value="31"  >31</option>
+        </select>
+        <input type="button" class= "col6" id="sendDateMonth" onclick="getZodiacSign()" value="Click!" /> 
+        <input type="button" onclick="resetFunction()" value="Reset"/>
+
+    </form>
+
+<!--sodiac sign and breeds with image-->
+<div id="puppyWrapper" style="display: none">  
+<div id="greeting"></div>
+<div id="dogBreeds"></div>
+<div id="sound"></div>
+<div id="image"></div>
+<button id="closeButton" onclick="resetFunction()">close &times;</button>
+</div>
+
+<!--clickable image to show all possible zodiac signs-->
+ <div id="puppyGallery">
+  <img class= "puppyImg" id="puppyImage1" src="images/Capricorn.jpg" onclick="capricorn()" alt="Capricorn">
+  <img class= "puppyImg" id="puppyImage2" src="images/Aquarius.jpg" onclick="aquarius()" alt ="Aquarius">
+  <img class= "puppyImg" id="puppyImage3" src="images/Pisces.jpg" onclick="pisces()" alt ="Pisces">
+  <img class= "puppyImg" id="puppyImage4" src="images/Aries.jpg" onclick="aries()" alt="Aries">
+  <img class= "puppyImg" id="puppyImage5" src="images/Taurus.jpg" onclick="taurus()" alt="Taurus">
+  <img class= "puppyImg" id="puppyImage6" src="images/Gemini.jpg" onclick="gemini()" alt="Gemini">
+  <img class= "puppyImg" id="puppyImage7" src="images/Cancer.jpg" onclick="cancer()" alt="Cancer">
+  <img class= "puppyImg" id="puppyImage8" src="images/Leo.jpg" onclick="leo()" alt="Leo">
+  <img class= "puppyImg" id="puppyImage9" src="images/Virgo.jpg" onclick="virgo()" alt="Virgo">
+  <img class= "puppyImg" id="puppyImage10" src="images/Libra.jpg" onclick="libra()" alt="Libra">
+  <img class= "puppyImg" id="puppyImage11" src="images/Scorpio.jpg" onclick="scorpio()" alt="Scorpio">
+  <img class= "puppyImg" id="puppyImage12" src="images/Sagittarius.jpg" onclick= "sagittarius()" alt="Sagittarius">
+</div>
+
+
+</div>
+
+ <script src="DogProjectChange3.js"></script> 
+
+ </body> 
+ </html> 

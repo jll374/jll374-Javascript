@@ -1,0 +1,224 @@
+* .selector-for-some-widget {
+  box-sizing: content-box;
+   }
+
+
+body{
+background:#c8dbfa;/*light blue*/
+font-family: 'Permanent Marker', cursive; 
+}
+
+ p,option {
+ font-family: 'Permanent Marker', cursive;
+ font-size:1rem;
+ margin:5rem;
+ } 
+
+.container,.centerText { 
+    text-align: center;
+    } 
+
+body{ /*background image of zodiac wheel*/
+background-image: url("images/zodiacwheel2.png");
+background-position:top center;
+background-repeat: no-repeat;
+background-width: 20%;
+} 
+
+
+h1{ /*Find your perfect breed!*/
+font-family: 'Permanent Marker', cursive; 
+font-size:3rem; 
+margin:20px;
+}
+
+h2 { /* Discription of program*/
+font-family: 'Permanent Marker', cursive; 
+font-size:1.2rem;   
+margin:30px;
+}
+
+ p,option {/*instructions*/
+ font-family:Ariel;
+ font-size:1.2rem;
+ margin:20px;
+ } 
+/*shows images are clickable*/
+.puppyImg:hover {
+  opacity: 0.5;
+  transition:0.8s;
+  }
+/*curves edges on galley images*/
+.puppyImg {
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+/* Pulled zodiac sign image*/
+img { 
+  border-radius: 5px;
+  height:auto;
+  max-width:100%; 
+}
+
+#zodiacForm{
+  padding-bottom: 20px;
+}
+
+#greeting {       /*Zodiac Sign*/
+  font-size:2.5rem;
+}
+
+#dogBreeds{      /*Zodiac Breeds*/
+font-family:ariel;
+font-size:1.2rem;
+padding:10px 10px;
+}
+
+#image {       /*Zodiac Image*/  
+  margin:auto;
+  max-width:65%;
+  position:center;
+  }
+
+#closeButton {
+   background-color:white;
+   border: none;
+   color: red;
+   cursor: pointer; 
+   font-family: 'Permanent Marker', cursive; 
+   font-size: 1rem;
+   text-decoration: none;
+  }
+ 
+ #puppyWrapper{
+  background-color:white;
+  border-width: 5px;
+  border-radius: 20px;
+ }
+
+@media screen and (min-width: 500px){
+#puppyWrapper{
+  margin:0 20%;
+}
+
+}
+
+ #puppyGallery{  /*all possible zodiac signs*/
+  display:grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows:auto; 
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  justify-content:center;
+  margin:5%;
+ }
+
+
+/* Image gallery with all zodiac possiblities - clickable*/
+#puppyImage1{ 
+grid-column:1/2;
+grid-row:1/2;
+}
+
+#puppyImage2{ 
+grid-column:2/3;
+grid-row:1/2;
+}
+
+#puppyImage3{
+grid-column:3/4;
+grid-row:1/2;
+}
+
+#puppyImage4{
+grid-column:4/4;
+grid-row:1/2;
+}
+
+#puppyImage5{
+grid-column:1/2;
+grid-row:2/3;
+}
+
+#puppyImage6{
+grid-column:2/3;
+grid-row:2/3;
+}
+
+#puppyImage7{
+grid-column:3/4;
+grid-row:2/3;
+}
+
+#puppyImage8{
+grid-column:4/5;
+grid-row:2/3;
+}
+
+#puppyImage9{
+grid-column:1/2;
+grid-row:3/4;
+}
+
+#puppyImage10{
+grid-column:2/3;
+grid-row:3/4;
+}
+
+#puppyImage11{
+grid-column:3/4;
+grid-row:3/4;
+}
+
+#puppyImage12{
+grid-column:4/5;
+grid-row:3/4;
+}
+}
+
+
+/* The Modal (background) */
+#myModal {
+    background-color:black;
+    margin:20px; 
+  }
+
+/* Modal Content */
+.modal-content {
+    background-color: white;
+    border: 10px solid black;
+    display: flex;
+    height:auto; 
+    max-width:500px; /* Full width */
+    position:fixed; /* Stay in place */
+    z-index:1000; /* Sit on top */
+  }
+
+/* The Close Button */
+.close {
+    color:red;
+    font-size: 28px;
+    font-weight: bold;
+    justify-content:flex-end;
+    margin-right:10px; 
+    position:relative;
+  }
+
+.close:hover,
+.close:focus {
+    color:gray;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+/*Need Help?*/
+#myBtn{
+   background-color:white;
+   border: none;
+   cursor: pointer; 
+   font-family: 'Permanent Marker', cursive; 
+   font-size: 1rem;
+   margin:20px;
+   text-decoration: none;
+  }
